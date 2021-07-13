@@ -217,8 +217,8 @@ img {
   display: block;
   margin: auto;
   padding: 6px 32px;
-  transition-property: color;
-  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-duration: 25i80ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   border-radius: 4px;
@@ -226,8 +226,7 @@ img {
 
 .buttom:focus,
 .buttom:hover {
-  color: var(--banner-color);
-  background: var(--hower-bg-buttom-color);
+    background: var(--hower-bg-buttom-color);
 }
 
 .section-title {
@@ -514,7 +513,7 @@ img {
 }
 .footer > .container {
   display: flex;
-  justify-content: flex-start;
+  flex-basis: calc((100%/3)-15px);
   align-items: center;
 }
 .social-list {
@@ -538,7 +537,62 @@ img {
 .social-link {
   margin-right: 10px;
 }
+.sub-name{
+  display: block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--banner-color);
+margin-left: 93px;
+margin-bottom: 20px;
+}
+.sub-input{
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: var(--secondary-bg-color);
+color: var(--banner-color);
+padding-left: 15px;
+}
+.sub-buttom{
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  color: var(--banner-color);
+  align-items: center;
+  margin-left: 20px;
+  padding-left: 20px;
 
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.sub-buttom > .icon{
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/btm-telegram.svg);
+  background-size: contain;
+  margin-right: 28px;
+}
+.subscripe{
+  display: flex;
+  margin-left: 93px;
+}
+.sub-buttom:hover{
+  background-color: var(--hower-bg-buttom-color);
+}
 /* main portfolio */
 
 .filter-nav {
