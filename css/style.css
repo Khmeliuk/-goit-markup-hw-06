@@ -848,7 +848,7 @@ padding: 12px 16px ;
 
 color: rgba(117, 117, 117, 0.5);
 }
-.modal-input:focus{
+.modal-input :focus{
   border-color: var(--accent-color);
 }
 .modal-input:focus + .input-icon{
